@@ -1,149 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deepak Wadhwa - Learning Community</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>टिंकू भाई खैवाल</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1046900758275213');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1046900758275213&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 
-  .card {
-    width: 85%;
-    max-width: 340px; 
-    background: #010a0f;
-    border: 1.5px solid #00d2ff;
-    border-radius: 35px;
-    padding: 20px 15px;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.15);
-  }
-
-  .profile-img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    border: 3px solid #00d2ff;
-    object-fit: cover;
-    margin-top: -5px;
-    box-shadow: 0 0 15px #00d2ff;
-  }
-
-  h1 {
-    color: #fff;
-    font-size: 20px;
-    margin: 15px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .features {
-    text-align: left;
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  .feature-item {
-    color: #ccc;
-    font-size: 13px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    display: flex;
-    align-items: center;
-  }
-
-  .feature-item:last-child { border-bottom: none; }
-
-  .icon { margin-right: 12px; font-size: 16px; }
-
-  .join-text {
-    color: #eee;
-    font-size: 12px;
-    margin: 20px 0 12px;
-    font-weight: 300;
-  }
-
-  .telegram-btn {
-    display: block;
-    background: linear-gradient(90deg, #00d2ff 0%, #9247ff 100%);
-    color: white;
-    text-decoration: none;
-    padding: 14px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0, 210, 255, 0.3);
-  }
-
-  .hindi-quote {
-    color: #bbb;
-    font-size: 13px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
-
-  .footer-box {
-    border: 1px solid rgba(0, 210, 255, 0.2);
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 11px;
-    color: #888;
-  }
-
-  /* Link styling for Agency */
-  .footer-box a { 
-    color: #00d2ff; 
-    font-weight: bold; 
-    text-decoration: none;
-  }
-
-  .disclaimer {
-    font-size: 9px;
-    color: #444;
-    margin-top: 12px;
-  }
-</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        body {
+            background: #0b0b1a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container-wrapper {
+            width: 100%;
+            max-width: 480px;
+        }
+        .container {
+            background: linear-gradient(145deg, #1a1a2e, #16213e);
+            border-radius: 40px;
+            padding: 30px 25px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .logo-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .logo-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+        .logo-inner {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #0b0b1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-inner i {
+            font-size: 40px;
+            color: #ffd700;
+        }
+        .verified-badge {
+            position: absolute;
+            right: 20px;
+            top: 0;
+            background: #00e676;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(0, 230, 118, 0.4);
+        }
+        .verified-badge i {
+            color: #fff;
+            font-size: 16px;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+        .tagline {
+            text-align: center;
+            color: #ffd700;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(5px);
+            border-radius: 16px;
+            padding: 15px 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .feature-card i {
+            font-size: 24px;
+            color: #ffd700;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .feature-card h3 {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .feature-card p {
+            color: #aaa;
+            font-size: 11px;
+            margin-top: 2px;
+        }
+        .market-section {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 18px 15px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .market-title {
+            color: #ffd700;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .market-title i {
+            margin-right: 8px;
+        }
+        .market-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .market-row:last-child {
+            border-bottom: 0;
+        }
+        .market-name {
+            color: #ddd;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .market-name i {
+            color: #ffd700;
+            font-size: 10px;
+            margin-right: 8px;
+        }
+        .market-time {
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            background: rgba(255, 215, 0, 0.15);
+            padding: 2px 14px;
+            border-radius: 30px;
+        }
+        .scrolling-strip {
+            background: linear-gradient(90deg, #ffd700, #f7971e);
+            border-radius: 30px;
+            padding: 12px 18px;
+            text-align: center;
+        }
+        .scrolling-strip p {
+            color: #0b0b1a;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .scrolling-strip strong {
+            color: #fff;
+            background: #000;
+            padding: 2px 12px;
+            border-radius: 30px;
+        }
+        .fixed-btn-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            max-width: 440px;
+            z-index: 999;
+        }
+        .btn-capsule {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0);
+            background-size: 300% 100%;
+            padding: 16px 25px;
+            font-size: 20px;
+            font-weight: 800;
+            border-radius: 50px;
+            width: 100%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            animation: moveGradient 4s linear infinite, pulseGlow 2s infinite;
+            text-decoration: none;
+            color: #fff;
+        }
+        @keyframes moveGradient {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 0%;
+            }
+        }
+        @keyframes pulseGlow {
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(255, 0, 127, 0.5), 0 0 25px rgba(0, 245, 212, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(255, 0, 127, 0.8), 0 0 40px rgba(0, 245, 212, 0.6);
+                transform: scale(1.01);
+            }
+        }
+        .btn-capsule i {
+            font-size: 26px;
+            animation: teleBounce 1s infinite alternate;
+        }
+        @keyframes teleBounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-3px);
+            }
+        }
+    </style>
 </head>
 <body>
-
-<div class="card">
-  <img src="https://i.ibb.co/FkV61CBG/711752123-122102238423341553-4586529772719677765-n.jpg" alt="Munaaf" class="profile-img">
-
-  <h1>Munaaf</h1>
-
-  <div class="features">
-    <div class="feature-item"><span class="icon"></span> Learning & Educational Sessions</div>
-    <div class="feature-item"><span class="icon"></span> Market Concepts & Awareness</div>
-    <div class="feature-item"><span class="icon"></span> Chart Reading Concepts</div>
-    <div class="feature-item"><span class="icon"></span> Educational Case Discussions</div>
-  </div>
-
-  <p class="join-text">Join our learning community and grow your knowledge</p>
-
-  <a href="https://t.me/+VQKcLntbMYhjOGJl" class="telegram-btn">JOIN TELEGRAM</a>
-
-  <p class="hindi-quote">     ,     </p>
-
-  <div class="footer-box">
-    This Channel Advertise By <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">AD BUILD AGENCY</a>
-  </div>
-
-  <div class="disclaimer">
-    Terms | Privacy | Disclaimer <br>
-    This site is not part of Facebook� or endorsed by Facebook�.
-  </div>
-</div>
-
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="logo-area">
+                <div class="logo-circle">
+                    <div class="logo-inner"><i class="fa-solid fa-crown"></i></div>
+                </div>
+                <div class="verified-badge"><i class="fa-solid fa-check"></i></div>
+            </div>
+            <h1>टिंकू भाई खैवाल</h1>
+            <div class="tagline">ऑफिशियल खाईवाल</div>
+            <div class="features-grid">
+                <div class="feature-card"><i class="fa-solid fa-bolt"></i><h3>फास्ट पेमेंट</h3><p>15 मिनट के अंदर</p></div>
+                <div class="feature-card"><i class="fa-solid fa-shield-halved"></i><h3>100% सुरक्षित</h3><p>पूरा भरोसा और सेफ्टी</p></div>
+                <div class="feature-card"><i class="fa-solid fa-headset"></i><h3>24/7 सर्विस</h3><p>बिना रुके लगातार सपोर्ट</p></div>
+                <div class="feature-card"><i class="fa-solid fa-star"></i><h3>सबसे बेस्ट रेट</h3><p>बाजार में सबसे बेहतरीन</p></div>
+            </div>
+            <div class="market-section">
+                <div class="market-title"><i class="fa-solid fa-clock"></i> लास्ट टाइमिंग (Last Timing)</div>
+                <div class="market-row"><div class="market-name"><i class="fa-solid fa-circle"></i> दिल्ली बाज़ार (Delhi Bazar)</div><div class="market-time">02:50 PM</div></div>
+                <div class="market-row"><div class="market-name"><i class="fa-solid fa-circle"></i> श्री गणेश (Shree Ganesh)</div><div class="market-time">04:20 PM</div></div>
+                <div class="market-row"><div class="market-name"><i class="fa-solid fa-circle"></i> फरीदाबाद (Faridabad)</div><div class="market-time">05:40 PM</div></div>
+                <div class="market-row"><div class="market-name"><i class="fa-solid fa-circle"></i> गाज़ियाबाद (Ghaziabad)</div><div class="market-time">08:10 PM</div></div>
+                <div class="market-row"><div class="market-name"><i class="fa-solid fa-circle"></i> गली (Gali)</div><div class="market-time">11:20 PM</div></div>
+            </div>
+            <div class="scrolling-strip">
+                <p>जल्द भुगतान, खरा सौदा और ईमानदारी की पहचान। क्लिक करके अभी जुड़ें <strong>टेलीग्राम</strong> पर!</p>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-btn-container">
+        <!-- ✅ बटन में onclick जोड़ा गया – क्लिक होने पर 'Lead' event फायर होगा -->
+        <a href="https://t.me/+4GBL8quDEcowZWFl" 
+           class="btn-capsule" 
+           target="_blank"
+           onclick="fbq('track', 'Lead', {content_name: 'Telegram Join', content_category: 'Subscription'});">
+            <i class="fa-brands fa-telegram"></i>
+            टेलीग्राम चैनल से जुड़ें
+        </a>
+    </div>
 </body>
 </html>
